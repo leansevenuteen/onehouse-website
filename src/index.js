@@ -11,7 +11,7 @@ const Handlebars = require('handlebars');
 const passport = require('passport');
 
 const app = express();
-
+const PORT = process.env.PORT || 3000;
 const route = require('./routes/index.js');
 const db = require('./config/db/index.js')
 
@@ -175,6 +175,6 @@ app.use(flash());
 // Routes & Controllers
 route(app);
 
-app.listen(8888, 'localhost', () => {
-    console.log('Server is running on http://localhost:8888');
+app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
 });
