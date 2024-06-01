@@ -47,7 +47,7 @@ async function getImage(imgPath) {
 class DetailController {
     async index(req, res) {
         try {
-            const post = await Post.findOne({ slug: { $regex: req.params.slug } });
+            const post = await Post.findOne({ slug: req.params.slug });
             if (!post) {
                 throw new Error('House not found');
             }
