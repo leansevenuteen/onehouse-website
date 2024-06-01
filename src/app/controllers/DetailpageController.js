@@ -1,5 +1,6 @@
 const Post = require('../modules/post');
 const User = require('../modules/user');
+const googleUser = require('../modules/google')
 const Rate = require('../modules/rate')
 const Report = require('../modules/reports')
 const mongoose = require('mongoose')
