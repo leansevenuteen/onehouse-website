@@ -4,7 +4,7 @@ const Posts = require('../modules/post')
 const googleUser = require('../modules/google')
 const { initializeApp } = require("firebase/app");
 const { getStorage, ref, getDownloadURL, listAll, uploadBytes } = require("firebase/storage");
-const { readdirSync, readFileSync, unlinkSync } = require("fs");
+const { readdirSync, readFileSync, statSync, unlinkSync } = require("fs");
 
 const firebaseConfig = {
     apiKey: "AIzaSyDF36H8mFiTkXTyvRD6z-4YHmqsNCZ4yxE",
@@ -46,8 +46,8 @@ async function uploadImagesToFirebase(userId) {
     try {
         let files = readdirSync('src/public/storage');
         files.sort((a, b) => {
-            const aStat = fs.statSync(path.join('src/public/storage', a));
-            const bStat = fs.statSync(path.join('src/public/storage', b));
+            const aStat = statSync(path.join('src/public/storage', a));
+            const bStat = statSync(path.join('src/public/storage', b));
             return bStat.birthtime - aStat.birthtime;
           });
         const file = files[0];
