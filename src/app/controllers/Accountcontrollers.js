@@ -162,7 +162,7 @@ class UserController {
         }
     }    
     password(req, res) {
-        res.render('changePassword', {showHeader: true, successMessage: req.flash('success'), errorMessage: req.flash('error') });
+        res.render('changepassword', {showHeader: true, successMessage: req.flash('success'), errorMessage: req.flash('error') });
     }
     async changePassword(req, res) {
         const { oldpassword, newpassword } = req.body;
