@@ -44,7 +44,13 @@ async function getImageUrl(ImagePath) {
 
 async function uploadImagesToFirebase(userId) {
     try {
-        const file = readdirSync('src/public/storage')[0];
+        let files = readdirSync('src/public/storage');
+        files.sort((a, b) => {
+            const aStat = fs.statSync(path.join('src/public/storage', a));
+            const bStat = fs.statSync(path.join('src/public/storage', b));
+            return bStat.birthtime - aStat.birthtime;
+          });
+        const file = files[0];
         const filePath = path.join('src/public/storage', String(file));
         const uploadPath = `${userId}/${file}`;
         const extname = path.extname(filePath).toLowerCase();
