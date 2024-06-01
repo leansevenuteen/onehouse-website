@@ -154,7 +154,7 @@ class PostController {
             description: 'Thanh toán tin đăng',
             orderCode: Math.floor(Math.random() * 10101010),
             returnUrl: 'https://onehousedev.onrender.com/post/payment-success',
-            cancelUrl: 'https://onehousedev.onrender.com/payment-failure',
+            cancelUrl: 'https://onehousedev.onrender.com/post/payment-failure',
         };
 
         const paymentLink = await payos.createPaymentLink(order);
