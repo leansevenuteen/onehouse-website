@@ -1,5 +1,6 @@
 # onehouse-website
-OneHouse is a project to design a website in the real estate field, developed by me - [Nguyen Cuong](https://github.com/leansevenuteen) and colleagues: [Hoang Minh](https://github.com/theluckiest1912), [Gia Lac](https://github.com/peanut20114), [Doan Duc](https://github.com/doanmanhducz), and [Duong Dat](https://github.com/NMFKos).
+OneHouse is a project to design a website in the real estate field.
+This project is developed by me - [Nguyen Cuong](https://github.com/leansevenuteen) and colleagues: [Hoang Minh](https://github.com/theluckiest1912), [Gia Lac](https://github.com/peanut20114), [Doan Duc](https://github.com/doanmanhducz), and [Duong Dat](https://github.com/NMFKos).
 
 ## Introduction
 OneHouse is a website for renting service apartments that offers a variety of features ranging from basic to advanced as follows:
