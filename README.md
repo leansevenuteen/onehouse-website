@@ -1,6 +1,4 @@
 # onehouse-website
-Audio Video Steganography integrated Machine Learning
-
 OneHouse is a project to design a website in the real estate field, developed by me - [Nguyen Cuong](https://github.com/leansevenuteen) and colleagues: [Hoang Minh](https://github.com/theluckiest1912), [Gia Lac](https://github.com/peanut20114), [Doan Duc](https://github.com/doanmanhducz), and [Duong Dat](https://github.com/NMFKos).
 
 ## Introduction
